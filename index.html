@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Directory</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Directory</h1>
+        <div class="filters">
+            <input type="text" id="nameFilter" placeholder="Search by Name">
+            <select id="designationFilter">
+                <option value="">All Designations</option>
+                <option value="Developer">Developers</option>
+                <option value="Designer">Designers</option>
+                <option value="Tester">Testers</option>
+                <option value="QA Engineer">QA Engineers</option>
+                <option value="Project Manager">Project Managers</option>
+            </select>
+            <select id="skillFilter">
+                <option value="">All Skills</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Photoshop">Photoshop</option>
+                <option value="Manual Testing">Manual Testing</option>
+                <option value="SQL">SQL</option>
+            </select>
+        </div>
+        <table id="projectsTable">
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Team Size</th>
+                    <th>Completed Tasks</th>
+                </tr>
+            </thead>
+            <tbody id="projectsBody"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
